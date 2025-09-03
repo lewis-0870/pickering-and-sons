@@ -15,3 +15,16 @@
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
