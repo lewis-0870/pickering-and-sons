@@ -63,20 +63,22 @@
 
         <!-- form entry section top of the main page -->
     <div class="row">
+        <div id="enquiryForm" class="row"></div>
+        <div class="row"></div>
         <div class="col-12">
-            <h2>Contact Us</h2>
-            <form id="enquiryForm" name="enquiryForm" method="POST" action="https://formspree.io/f/xyzdlqda">
+            <h2 >Contact Us</h2>
+            <form  name="enquiryForm" method="POST" action="https://formspree.io/f/xyzdlqda">
                 <label for="firstName" class="visually-hidden">First Name</label>
-                <input type="text" class="form-control"  id="firstName" name="firstName" placeholder="First name" aria-label="First name">
+                <input type="text" class="form-control"  id="firstName" name="firstName" placeholder="First name" aria-label="First name" required>
 <!-- surname -->
                 <label for="lastName" class="visually-hidden">Last Name</label>
-                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" aria-label="Last name">
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" aria-label="Last name" required>
 <!-- email address -->
                 <label for="email" class="visually-hidden">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email" aria-label="Email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" aria-label="Email" required>
 <!-- contact number -->
                 <label for="phone" class="visually-hidden">Phone</label>
-                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" aria-label="Phone">
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" aria-label="Phone" required maxlength="9">
 <!-- info about work to be completed -->
                 <label for="information" class="visually-hidden">Information</label>
                 <textarea class="form-control" id="information" name="information" rows="4" placeholder="What can we do for you?" aria-label="Your message"></textarea>
