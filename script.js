@@ -84,3 +84,19 @@ darkModeBtn.addEventListener("click", function darkMode() {
     const navbar = document.getElementById("navbar");
     navbar.classList.toggle("dark-navbar", isDarkMode);
 });
+
+// function phoneValidation() {
+//   // Get the value of the input field with id="phone"
+//   let x = document.getElementById("phone").value;
+//   // If x is Not a Number or less than one or greater than 10
+//   let text;
+//   if (isNaN(x) || x < 1 || x > 10) {
+//     text = "Input not valid";
+//   } else {
+//     text = "Input OK";
+//   }
+
+//   submitBtn.onclick = function() {
+//     phoneValidation(x);
+//   };
+// }
