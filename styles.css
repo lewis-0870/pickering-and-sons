@@ -4,6 +4,37 @@
     border: black solid 1px;
 }
 
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-navbar {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#navbar {
+  position: sticky !important;
+  top: 0;
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

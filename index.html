@@ -8,21 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container text-center">
+    <div id="main" class="container text-center">
 <!------------- Nav bar and links --------------------->
-        <div class="row">
+        <div id="navbar"class="row">
             <div class="col-sm-8">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <div class="navbar-brand" >
+                        <img src="https://i.ibb.co/LXDn442j/Gemini-Generated-Image-z59x3yz59x3yz59x.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Summit Builders
+                    </div>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">Features</a>
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#main">Home</a>
+                            <a class="nav-link" href="#enquiryForm">Contact Us</a>
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                            <button id="darkModeToggle" class="btn btn-outline-secondary">Dark Mode</button>
                         </div>
                     </div>
                     </div>
@@ -61,7 +65,7 @@
     <div class="row">
         <div class="col-12">
             <h2>Contact Us</h2>
-            <form name="enquiryForm" method="POST" action="https://formspree.io/f/xyzdlqda">
+            <form id="enquiryForm" name="enquiryForm" method="POST" action="https://formspree.io/f/xyzdlqda">
                 <label for="firstName" class="visually-hidden">First Name</label>
                 <input type="text" class="form-control"  id="firstName" name="firstName" placeholder="First name" aria-label="First name">
 <!-- surname -->
@@ -84,7 +88,7 @@
     <!-- Gallery of completed work -->
     <div class="row">
         <div class="col-12">
-            <h2>Testimonials from our Clients</h2>
+            <h2 id="testimonials">Testimonials from our Clients</h2>
         </div>
                 <!-- Gallery of completed work including pop out testimonals with more infor about job -->
     <!--------- ------------------- --------->
