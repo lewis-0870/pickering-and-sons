@@ -73,3 +73,14 @@ window.onclick = function(event) {
     modal4.style.display = "none";
   }
 }
+
+// dark mode button
+
+const darkModeBtn = document.getElementById("darkModeToggle");
+
+darkModeBtn.addEventListener("click", function darkMode() {
+    const isDarkMode = document.body.classList.toggle("dark-mode");
+    darkModeBtn.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("dark-navbar", isDarkMode);
+});
