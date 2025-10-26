@@ -8,15 +8,18 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v24.0&appId=APP_ID"></script>
     <div id="main" class="container text-center">
 <!------------- Nav bar and links --------------------->
-        <div id="navbar"class="row">
-            <div class="col-sm-8">
+        <div id="navbar"class="row h-50">
+            <div class="col-sm-6">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
+                    <!-- MAKES THE NAV BAR STICKY TO THE TOP OF PAGE -->
+                    <!-- <div class="container-fluid"> -->
                     <div class="navbar-brand" >
-                        <img src="https://i.ibb.co/LXDn442j/Gemini-Generated-Image-z59x3yz59x3yz59x.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-                        Summit Builders
+                        <img src="https://i.ibb.co/Gv9M77Ny/Pickering-and-sons-Logo.jpg" alt="logo" width="50" height="auto" class="d-inline-block align-text-top">
+                        
                     </div>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -26,46 +29,36 @@
                             <a class="nav-link" href="#main">Home</a>
                             <a class="nav-link" href="#enquiryForm">Contact Us</a>
                             <a class="nav-link" href="#testimonials">Testimonials</a>
-                            <button id="darkModeToggle" class="btn btn-outline-secondary">Dark Mode</button>
-                        </div>
+                            <button id="darkModeToggle" class="btn btn-outline-secondary">Blue Mode</button>
+                        </div>  
                     </div>
                     </div>
                 </nav>
             </div>
             <div class="col-sm-4">
-                <nav class="navbar bg-body-tertiary">
+                <!-- Search bar -->
+                <!-- <nav class="navbar bg-body-tertiary">
                     <div class="container-fluid">
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
-                </nav>
+                </nav> -->
             </div>
         </div>
         </nav>
         <!-- ------------Logo ---------------------------->
         <div class="row">
             <div class="col-12">
-                <img src="https://i.ibb.co/Vc4qzfFH/unnamed-banner.png" alt="unnamed-banner" class="img-fluid">
+                <img src="https://i.ibb.co/zpX63FK/Pickering-and-Sons-title-bar.jpg" alt="Pickering-and-Sons-title-bar" padding="25" class="img-fluid">
             </div>
         </div>
         <!-- opening text and image -->
         <div class="row">
-            <div class="col-sm-8">
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="https://i.ibb.co/N2WPK8G6/Gemini-Generated-Image-kolgwekolgwekolg.png" alt="Gemini-Generated-Image-kolgwekolgwekolg" class="img-fluid">
-            </div>
-        </div>
-
-        <!-- form entry section top of the main page -->
-    <div class="row">
-        <div id="enquiryForm" class="row"></div>
-        <div class="row"></div>
-        <div class="col-12">
+             <div class="col-sm-8">
+                 <!-- form entry section top of the main page -->
+                <div id="enquiryForm" class="row"></div>
             <h2 >Contact Us</h2>
             <form  name="enquiryForm" method="POST" action="https://formspree.io/f/xyzdlqda">
                 <label for="firstName" class="visually-hidden">First Name</label>
@@ -85,6 +78,20 @@
 
                 <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
             </form>
+            </div>
+            <div class="col-sm-4">
+                <!-- Link to facebook page with feed on show -->
+                <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100093062394713" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/profile.php?id=100093062394713" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/profile.php?id=100093062394713">Pickering &amp; Sons Building Contractors</a>
+                    </blockquote>
+                </div>
+            </div>
+           
+        </div>
+
+       
+       
         </div>
     </div>
     <!-- Gallery of completed work -->
@@ -102,7 +109,7 @@
 
             <div class="col-3 relative column" style="width: 25%;">
                 <button id="myBtn1" type="button">
-                    <img id="myImage1" class="gallery img-fluid hover-shadow imagePo" src="https://i.ibb.co/Fqm4gSz7/Gemini-Generated-Image-6me69o6me69o6me6.png" alt="Gemini-Generated-Image-6me69o6me69o6me6">
+                    <img id="myImage1" class="gallery img-fluid hover-shadow imagePo" src="https://i.ibb.co/DfJcdppj/14-10-2026.jpg" alt="Gemini-Generated-Image-6me69o6me69o6me6">
                 </button>
             </div>
             <!-- The Modal for image number 1 -->
@@ -111,13 +118,17 @@
               <!-- Modal content -->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>Taj Mahal</h2>
-                    <p>Construction Project - Full build.</p>
+                    <h2>Blockwork Shed</h2>
                 </div>
                 <span id="close1" class="close">&times;</span>
-                    <p>It was truly a monumental undertaking, and I must commend the construction team. From the initial designs to the final placement of the last marble inlay, their attention to detail was unparalleled. My beloved's resting place is not merely a tomb but a testament to their skill and dedication. The end result is beyond my grandest expectations—a masterpiece that will stand for eternity. I am a very satisfied customer and would highly recommend their services to anyone looking to build something truly magnificent. </p>
-                    <p>Emperor Shah Jahan.</p>
-                    <img src="https://i.ibb.co/6R9hS2Lv/Gemini-Generated-Image-7ml59l7ml59l7ml5.png" alt="Gemini-Generated-Image-7ml59l7ml59l7ml5" class="img-fluid" width="400" height="auto" position="relative">
+                    <p>Blockwork shed built last week for a customer in Redcar with a epdm roof and sand cement render to finish another one ticked off </p>
+                    <div class="row">
+                        <img class="col-4" src="https://i.ibb.co/DDd5RxdX/14-10-2026-1.jpg" alt="14-10-2026-1" class="img-fluid" width="200" height="auto" >
+                        <img class="col-4" src="https://i.ibb.co/Mk3CDd1X/14-10-2026-2.jpg" alt="14-10-2026-2" class="img-fluid" width="200" height="auto" >
+                        <img class="col-4" src="https://i.ibb.co/d4hvDjLp/14-10-2026-3.jpg" alt="14-10-2026-3" class="img-fluid" width="200" height="auto" >
+                        <!-- <img class="col-4" src="https://i.ibb.co/DfJcdppj/14-10-2026.jpg" alt="14-10-2026" class="img-fluid" width="200" height="auto"> -->
+                    </div>
+
             </div>
             </div>
     <!--------- ------------------- --------->
