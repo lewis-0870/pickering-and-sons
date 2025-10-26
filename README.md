@@ -1,2 +1,2 @@
-# business page
-Putting it all together
+# Pickering and Sons
+Business page
