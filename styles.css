@@ -21,18 +21,23 @@ body {
   color: white !important;
 }
 
+/* Style for paragraph of writing all about us */
+
+.brand-blue-text {
+    color: #0D47A1 !important;
+}
+
+.brand-blue-border-left {
+    border-left: 6px solid #0D47A1;
+    padding-left: 15px; /* Add space between the border and the text */
+}
+
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 400px;
     margin: 0 auto;
-}
-
-#navbar {
-  position: sticky !important;
-  top: 0;
-  overflow: hidden;
 }
 
 .visually-hidden {

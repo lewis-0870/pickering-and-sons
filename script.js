@@ -100,3 +100,4 @@ darkModeBtn.addEventListener("click", function darkMode() {
 //     phoneValidation(x);
 //   };
 // }
+
