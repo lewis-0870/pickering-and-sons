@@ -128,15 +128,6 @@ form {
   transform: translateY(4px);
 }
 
-/* .client-boxes-row {
-    /* Set the maximum width for the entire section */
-    max-width: 1500px; 
-    
-    /* Center the container on the screen */
-    margin-left: auto;
-    margin-right: auto;
-} */
-
 .client-boxes-row {
     /* 1. Sets the maximum width for the group of boxes */
     max-width: 1200px; 
