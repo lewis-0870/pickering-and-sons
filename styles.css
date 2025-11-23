@@ -127,3 +127,26 @@ form {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* .client-boxes-row {
+    /* Set the maximum width for the entire section */
+    max-width: 1500px; 
+    
+    /* Center the container on the screen */
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.client-boxes-row {
+    /* 1. Sets the maximum width for the group of boxes */
+    max-width: 1200px; 
+    
+    /* 2. Centers the row element itself on the page */
+    margin: 0 auto; 
+    
+    /* 3. Ensures the row behaves as a Flex container */
+    display: flex; 
+    
+    /* 4. Explicitly centers the columns within the row */
+    justify-content: center; 
+}
