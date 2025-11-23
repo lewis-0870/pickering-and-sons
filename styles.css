@@ -141,3 +141,26 @@ form {
     /* 4. Explicitly centers the columns within the row */
     justify-content: center; 
 }
+
+.btn-contact-highlight {
+    /* 1. Sets the blue border */
+    border: 2px solid #007bff; /* Use your desired blue color */
+    
+    /* 2. Adds padding inside the border to create the "box" */
+    padding: 5px 10px !important; 
+    
+    /* 3. Adds rounded corners (optional) */
+    border-radius: 5px; 
+    
+    /* 4. Ensures the link text color is blue (if not already) */
+    color: #007bff !important; 
+    
+    /* 5. Adds a little margin to separate it from other menu items (optional) */
+    margin-left: 10px; 
+}
+
+/* Optional: Style for when the user hovers over the button */
+.btn-contact-highlight:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white !important; /* White text on hover */
+}
