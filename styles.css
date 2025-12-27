@@ -127,6 +127,13 @@ form {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+#testimonials {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px; /* Space from the button above */
+    margin-bottom: 30px; /* Space from images below */
+    color: #1a4a8e; /* Matches your blue theme */
+}
 
 .client-boxes-row {
     /* 1. Sets the maximum width for the group of boxes */
@@ -140,6 +147,8 @@ form {
     
     /* 4. Explicitly centers the columns within the row */
     justify-content: center; 
+    flex-wrap: wrap;        /* Essential for mobile/tablet screens */
+
 }
 
 .btn-contact-highlight {
