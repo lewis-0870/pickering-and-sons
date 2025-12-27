@@ -164,3 +164,18 @@ form {
     background-color: #007bff; /* Blue background on hover */
     color: white !important; /* White text on hover */
 }
+
+.slider-wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+
+}
+
+.slider-container {
+        display: flex;           /* Turns on Flexbox */
+        justify-content: center; /* Centers horizontally (left to right) */
+        align-items: center;     /* Centers vertically (top to bottom) */
+        min-height: 100vh;      /* Makes the container the full height of the screen */
+        width: 100%;
+        background-color: #f0f7ff; /* Optional: adds a light background to make the slider pop */
+    }

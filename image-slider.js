@@ -59,13 +59,27 @@ class ImageSlider extends HTMLElement {
                     width: 2px;
                     background: #fff;
                     pointer-events: none;
+                    display: flex;
+                    align-items: center;      /* Vertically centers the arrow */
+                    justify-content: center;   /* Horizontally centers the arrow */
     }
+                    .divider span {
+                    background: #fff;
+                    color: #333;
+                    padding: 5px;
+                    border-radius: 50%;       /* Makes it a circle */
+                    font-size: 20px;
+                    font-weight: bold;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
             </style>
 
             <div class="container">
                 <img src="${beforeImg}" alt="Image of construction project before">
                 <img src="${afterImg}" class="after-image" alt="Image of construction project after">
-                <div class="divider"></div>
+                <div class="divider">
+                <span>◀▶</span>
+                </div>
                 <input type="range" class="slider" min="0" max="100" value="50">
             </div>
         `;
